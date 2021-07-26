@@ -8,7 +8,7 @@ import { BackButton, BackButtonArea, Container, Map, Title, TitleArea } from './
 import { Marker } from 'react-native-maps';
 
 
-const Login: React.FC = () => {
+const MapUser: React.FC = () => {
     const [initialPosition, setInicialPosition] = useState<[number, number]>([0, 0]);
     const [currentMarker, setCurrentMarker] = useState<[number, number]>([0, 0]);
     const navigation = useNavigation();
@@ -71,4 +71,4 @@ const Login: React.FC = () => {
     );
 };
 
-export default Login;
+export default MapUser;

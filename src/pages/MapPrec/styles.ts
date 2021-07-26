@@ -1,7 +1,7 @@
 import { RectButton } from 'react-native-gesture-handler';
 import Constants from 'expo-constants';
 import styled from 'styled-components/native';
-import MapView from 'react-native-maps';
+import { WebView as NonStyledWebView } from "react-native-webview";
 
 export const Container = styled.View`
     flex: 1;
@@ -30,7 +30,7 @@ export const BackButtonArea = styled.View`
 `;
 
 export const BackButton = styled(RectButton)`
-    width: 150px;
+    width: 80%;
     height: 50px;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,7 @@ export const BackButton = styled(RectButton)`
     margin-bottom: 25px;
 `;
 
-export const Map = styled(MapView)`
+export const WebView = styled(NonStyledWebView)`
     flex: 1;
     margin: 20px 0;
 `;

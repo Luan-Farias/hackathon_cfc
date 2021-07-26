@@ -29,6 +29,7 @@ export const List = styled.View`
 export const ListItem = styled(RectButton)`
     margin-top: 10px;
     padding: 5px;
+    margin-bottom: 0;
 `;
 
 export const ListItemTitle = styled.Text`
